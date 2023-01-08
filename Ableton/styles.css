@@ -14,6 +14,9 @@ body{
     font-family: Archivo, sans-serif;
 }
 
+div{
+    display:block;
+}
 .wrapper {
     width: 100%;
 }
@@ -34,6 +37,7 @@ section{
 section.desc-container {
     display: flex;
     flex-flow: column wrap;
+    flex-direction:row;
     -webkit-box-pack: center;
     justify-content: center;
     background: rgb(249, 249, 249);
@@ -42,6 +46,10 @@ section.desc-container {
     align-items: center;
     padding: 25px 0px;
 }
+
+
+
+
 .header{
     width: 100%;
     margin: 0px;
@@ -180,19 +188,103 @@ a:not([class]) {
     text-align: center;
 }
 
-@media (min-width: 768px)
-.total {
+
+
+.total{
     max-width: 1200px;
     margin: auto;
     border-right: 2px solid;
     border-left: 2px solid;
 }
 
-.total{
-    border: none;
-    max-width: 1200px;
-    margin: auto;
-    border-right: 2px solid;
-    border-left: 2px solid;
+@media (min-width: 600px)
+.inner-container {
+    -webkit-box-pack: center;
+    justify-content: center;
 }
+
+.inner-container {
+    display: flex;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px 16px;
+    width: 100%;
+    border-top: 2px solid black;
+    transition: all 0.3s ease 0s;
+}
+@media (min-width: 768px)
+.inner-content {
+    padding: 0px 16px;
+}
+
+.inner-content {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px)
+.inner-content > div {
+    flex: 1 1 0%;
+}
+
+@media (min-width: 500px)
+.deep-content {
+    margin-right: 32px;
+}
+
+.details-title {
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+h3 {
+    color: inherit;
+    font-weight: bold;
+    text-rendering: optimizelegibility;
+    font-size: 1.38316rem;
+    line-height: 1.1;
+}
+
+.details-container ul {
+    margin-bottom: 0px;
+}
+
+ol, ul {
+    padding: 0px;
+    margin: 0px 0px 1.45rem 1.45rem;
+    list-style-position: outside;
+    list-style-image: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.details-container p, .details-container li, .details-container a {
+    font-size: 18px;
+}
+
+ul li {
+    list-style-type: circle;
+}
+
+@media (min-width: 768px)
+.inner-content > div {
+    flex: 1 1 0%;
+}
+
+.details-title {
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 25px;
 }
