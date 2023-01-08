@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizespeed;
+    line-height: 1.5;
+    margin: 0;
+    font-family: Archivo, sans-serif;
+}
 .header{
     font-family: DM Serif Display, serif;
     font-weight: 900;
@@ -15,6 +28,60 @@
     
 }
 
-.top-left{
+nav {
+    display: block;
+}
+
+.panel-content{
+    padding: 8px 0px;
+    background-color: white;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+
+}
+.frontend{
     font-family: DM Serif Display, serif;
+    color:#343434;
+    font-size: 30px;
+    font-weight: 750;
+    
+}
+
+a{
+    color:rgb(51, 51, 51);
+    transition: color 0.2s ease 0;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.top-panel{
+    background-color: white;
+    position: sticky;
+    top:0px;
+    z-index: 1;
+    width:100%;
+    padding: 0px 16px;
+    border-bottom: 2px solid;
+}
+
+.menu{
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    display:inline-flex;
+}
+.nav-item{
+    font-weight: 600;
+    color:rgb(51, 51, 51);
 }
