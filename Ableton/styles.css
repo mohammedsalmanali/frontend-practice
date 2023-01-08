@@ -14,6 +14,19 @@ body{
     font-family: Archivo, sans-serif;
 }
 
+.wrapper {
+    width: 100%;
+}
+
+main {
+    padding: 0px;
+    width: 100%;
+}
+
+main {
+    display: block;
+}
+
 section{
     display:block;
 }
@@ -21,8 +34,6 @@ section{
 section.desc-container {
     display: flex;
     flex-flow: column wrap;
-    flex-direction: column;
-    flex-wrap: wrap;
     -webkit-box-pack: center;
     justify-content: center;
     background: rgb(249, 249, 249);
@@ -34,7 +45,7 @@ section.desc-container {
 .header{
     width: 100%;
     margin: 0px;
-    padding: 25px 16px;
+    padding: 0px 16px;
     text-align:center;
     font-size:105px;
 }
@@ -175,4 +186,13 @@ a:not([class]) {
     margin: auto;
     border-right: 2px solid;
     border-left: 2px solid;
+}
+
+.total{
+    border: none;
+    max-width: 1200px;
+    margin: auto;
+    border-right: 2px solid;
+    border-left: 2px solid;
+}
 }
